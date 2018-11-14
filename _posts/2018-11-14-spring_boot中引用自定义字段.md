@@ -11,8 +11,7 @@ tags:
 ---
 # 前言
 
- 在spring boot开发的时候会使用到自定义的一些字段，这个时候我们就可以使用spring boot提供的
- ` @Value `注解来达到这一目的。
+ 在spring boot开发的时候会使用到自定义的一些字段，这个时候我们就可以使用spring boot提供的` @Value `注解来达到这一目的。
 
 # 正文
 首先在` application.yml `文件里设置好我们需要用到的字段
@@ -25,7 +24,6 @@ jwt:
 jwt.authKey = theKey 
 ```
 把需要的字段配置好了之后呢，我们就在代码里来使用它。
-
 在需要使用到它的类里面使用` @Value(${your_propertie_name}) `注解增加到变量声明前即可使用。
 ```
 public class AuthUtils {
