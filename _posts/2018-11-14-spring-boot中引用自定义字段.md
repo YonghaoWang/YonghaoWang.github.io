@@ -4,7 +4,7 @@ title:      spring_boot中引用自定义字段
 subtitle:   这是我在Github Pages上的第一篇文章噢！
 date:       2018-11-14
 author:     Yonghao Wang
-header-img: images/2018-11/hello_world.jpg
+header-img: images/2018-11/DSC_0972.JPG
 catalog: true
 tags:
     - Spring boot
