@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      spring_boot中引用自定义字段
-subtitle:   这是我在Github Pages上的第一篇文章噢！
+subtitle:    在使用spring boot进行开发的时候会使用到自定义的一些字段
 date:       2018-11-14
 author:     Yonghao Wang
 header-img: images/2018-11/DSC_0972.JPG
@@ -24,7 +24,7 @@ jwt:
 jwt.authKey = theKey 
 ```
 把需要的字段配置好了之后呢，我们就在代码里来使用它。
-在需要使用到它的类里面使用` @Value(${your_propertie_name}) `注解增加到变量声明前即可使用。
+在需要使用到它的类里面使用` @Value("${your_propertie_name}") `注解增加到变量声明前即可使用。
 ```
 public class AuthUtils {
 
@@ -44,6 +44,7 @@ public class AuthUtils {
 
 首先记得在类名前使用` @Component ` 注解，然后使用` setAuthKey `方法来将我们需要的字段的值给传递进来。
 ```
+@Component
 public class AuthUtils {
 
     private static String authKey;
