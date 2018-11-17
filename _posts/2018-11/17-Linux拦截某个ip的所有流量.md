@@ -1,0 +1,55 @@
+---
+layout:     post
+title:      Linux拦截某个ip的所有流量
+subtitle:   防止别人滥用机器上的服务
+date:       2018-11-17
+author:     Yonghao Wang
+header-img: images/2018-11/cold.jpg
+catalog: true
+tags:
+    - Liunx
+---
+> 最近登录自己基于caddy + filemanager搭建的个人网盘，发现竟然上不去了，于是登录主机商的管理面板查看情况，竟然流量溢出了！怀疑是机器被盗用了，与客服的一番PY（沟通）之后呢，他给我重置了一下流量便可以正常访问了。
+> 当然，解决问题才是重点。
+# 找出原因
+登录到自己的主机之后，我先用`nload`命令查看一下机器的实时流量，这时发现正在快速的跑着流量，果然有问题！
+接下来运行`iftop`命令查看连接情况，这时发现了一个ip `173.208.188.246`连接上了本机并且流量跑得还不慢。把这个ip输到了浏览器进行访问，出了这样一个界面。
+![](./{V$9H7%I$HV7$ECCW[JMHCB.png)
+查了一下这个ip的信息，物理位置是在美国，而这个页面是中文，肯定就有问题了。
+# 封锁ip
+最简单粗暴的方法呢就是禁止掉这个ip，不让他连接到这台电脑。
+
+UFW(Uncomplicated Firewall)是一个iptables的前端应用程序，尤其适合作为单台服务器或主机的防火墙。它已成为Ubuntu Linux系统默认的防火墙配置工具。对于系统管理员来讲，UFW工具真是简单易用。它是一种创建基于IPv4或IPv6防火墙的快捷方法。
+
+首先查看一下是否启用了`ufw`这个工具
+```
+$ sudo ufw status 
+```
+终端显示的是`Status: inactive`，也就是告诉我们这个软件还没有启动，先使用`sudo ufw enable`命令来启动这个软件。它会这样提示
+```
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? 
+```
+因为我们之前并没有设置过相关信息，直接输入`y`启动它。成功启动之后，就使用ufw这个工具来拦截这个ip地址，终端输入
+```
+sudo ufw ufw deny from 173.208.188.246 to any
+```
+执行成功之后它就会拦截所有与这个ip相关的流量包，也就达到封锁这个ip的目的。
+
+执行`sudo ufw status`查看状态信息，可以看到设置已经生效了。
+```
+Status: active
+
+To                         Action      From
+--                         ------      ----
+Anywhere                   DENY        173.208.188.246
+```
+
+这个时候再去执行`nload`查看网速信息，果然，没有那么快的流量流入，基本上正常了。
+
+# 其它
+如果想拦截某一端口可以输入这样的命令
+```
+sudo ufw deny from 173.208.188.246 to any port 80
+```
+
+`ufw`这个工具非常简便与强大的，详细的使用方法可以用`man ufw`进行了解。
