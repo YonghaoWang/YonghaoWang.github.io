@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      spring_boot中引用自定义字段
+title:      spring boot中引用自定义字段
 subtitle:    在使用spring boot进行开发的时候会使用到自定义的一些字段
 date:       2018-11-14
 author:     Yonghao Wang

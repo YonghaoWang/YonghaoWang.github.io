@@ -7,7 +7,7 @@ author:     Yonghao Wang
 header-img: images/2018-11/cold.jpg
 catalog: true
 tags:
-    - Liunx
+    - Spring boot
 ---
 
 # 前言
