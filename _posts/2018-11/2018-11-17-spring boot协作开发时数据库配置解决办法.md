@@ -4,7 +4,7 @@ title:      spring boot协作开发时数据库配置解决办法
 # subtitle:   
 date:       2018-11-17
 author:     Yonghao Wang
-header-img: images/2018-11/cold.jpg
+header-img: images/2018-11/698584157B008F2FAFA87CB64119ABF5.jpg
 catalog: true
 tags:
     - Spring boot

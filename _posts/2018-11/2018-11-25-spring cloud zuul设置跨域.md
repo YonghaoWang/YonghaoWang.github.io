@@ -4,7 +4,7 @@ title:      spring cloud zuul设置跨域
 subtitle:   Spring cloud允许前端跨域访问
 date:       2018-11-25
 author:     Yonghao Wang
-header-img: images/2018-11/bg.jpg
+header-img: images/2018-11/02A5A000BA2E4646CB35450A2E5B119E.jpg
 catalog: true
 tags:
     - Spring cloud
