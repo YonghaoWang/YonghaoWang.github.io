@@ -71,6 +71,12 @@ gitalk:
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
+# 访客
+leancloud:
+  enable: true
+  app_id: uRWCOWGDoz7BXy74wjhrOLNp-gzGzoHsz
+  app_key: TFw8qQPQPB7c6g15Wnz4oRWB
+
 # 统计
 
 # Analytics settings
