@@ -4,7 +4,7 @@ title:      caddy反向代理后页面跳转到内网localhost地址
 # subtitle:   
 date:       2018-12-04
 author:     Yonghao Wang
-header-img: images/2018-12/DSC_1021111111111.jpg
+header-img: images/2018-12/photo_2018-12-11_12-43-07.jpg
 catalog: true
 tags:
     - Network

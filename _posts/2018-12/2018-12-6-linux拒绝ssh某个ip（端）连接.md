@@ -7,7 +7,8 @@ author:     Yonghao Wang
 header-img: images/2018-12/photo_2018-12-06_20-28-35.jpg
 catalog: true
 tags:
-    - Linux, Network
+    - Linux
+    - Network
 ---
 
 # 前言

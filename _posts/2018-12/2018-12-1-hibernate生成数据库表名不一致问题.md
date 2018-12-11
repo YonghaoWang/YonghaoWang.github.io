@@ -4,7 +4,7 @@ title:      hibernate生成数据库表名不一致问题
 subtitle:   修改hibernate命名策略
 date:       2018-12-01
 author:     Yonghao Wang
-header-img: images/2018-12/DSC_1021111111111.jpg
+header-img: images/2018-12/photo_2018-12-11_12-43-04.jpg
 catalog: true
 tags:
     - Spring boot
