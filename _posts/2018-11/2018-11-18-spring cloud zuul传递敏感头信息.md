@@ -3,7 +3,7 @@ layout:     post
 title:      spring cloud zuul传递敏感头信息
 subtitle:   提供给下游服务请求头信息
 date:       2018-11-18
-author:     Yonghao Wang
+author:     Reed
 header-img: images/2018-11/cold.jpg
 catalog: true
 tags:

@@ -3,7 +3,7 @@ layout:     post
 title:      caddy反向代理后页面跳转到内网localhost地址
 # subtitle:   
 date:       2018-12-04
-author:     Yonghao Wang
+author:     Reed
 header-img: images/2018-12/photo_2018-12-11_12-43-07.jpg
 catalog: true
 tags:

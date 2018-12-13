@@ -3,7 +3,7 @@ layout:     post
 title:      linux修改监听端口并拒绝ssh某个ip（端）连接
 subtitle:   linux修改监听端口并设置ssh连接ip白名单（黑名单）
 date:       2018-12-06
-author:     Yonghao Wang
+author:     Reed
 header-img: images/2018-12/photo_2018-12-06_20-28-35.jpg
 catalog: true
 tags:
