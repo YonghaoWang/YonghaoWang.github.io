@@ -283,7 +283,7 @@
       let url = $visitors.attr('id').trim();
       let title = $visitors.attr('data-flag-title').trim();
       $.ajax({
-          url:"/Visit/visit?" + "postId=" + url + "&title=" + title,
+          url:"http://localhost:8087/Visit/visit?" + "postId=" + url + "&title=" + title,
           type: 'GET',
           success: display,
           });
