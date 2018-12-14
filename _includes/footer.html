@@ -294,7 +294,9 @@
       }
       function display(data) {
           console.log(data)
+          page.count  = data;
           $(".visitors-count").val(data);
+          $(".visitors-count").text(data);
       }
   </script>
   <!-- <script>
