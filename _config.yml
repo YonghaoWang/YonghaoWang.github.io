@@ -72,10 +72,10 @@ gitalk:
 
 
 # 访客
-leancloud:
+visitor:
   enable: true
-  app_id: uRWCOWGDoz7BXy74wjhrOLNp-gzGzoHsz
-  app_key: TFw8qQPQPB7c6g15Wnz4oRWB
+  site: http://localhost:8087
+  key: TFw8qQPQPB7c6g15Wnz4oRWB
 
 # 统计
 
