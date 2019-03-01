@@ -19,7 +19,7 @@ tags:
 
 首先在JavaScript引用它的核心js文件。
 ``` html
-<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.0/pace.min.js""></script>
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.0/pace.min.js"></script>
 ```
 然后还需要选择一个样式文件！不要忘了这一点，否则页面不会有任何的效果~
 ![](/images/2019-2/206115642.png)
