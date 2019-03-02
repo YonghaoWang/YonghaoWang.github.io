@@ -4,7 +4,7 @@ title:      Spring Boot集成Shiro + redis
 subtitle:   介绍一下通过基于角色的权限验证的Shiro配置
 date:       2019-03-01
 author:     Reed
-header-img: images/2019-3/IMG_20190220_090030.jpg.jpg
+header-img: images/2019-3/IMG_20190220_090030.jpg
 catalog: true
 tags:
     - Spring Boot
