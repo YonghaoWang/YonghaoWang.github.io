@@ -7,7 +7,7 @@ author:     Reed
 header-img: images/2018-11/DSC_0972.JPG
 catalog: true
 tags:
-    - Spring boot
+    - Spring Boot
 ---
 # 前言
 

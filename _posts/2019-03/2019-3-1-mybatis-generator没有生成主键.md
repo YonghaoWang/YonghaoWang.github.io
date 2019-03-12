@@ -7,7 +7,7 @@ author:     Reed
 header-img: images/2019-3/IMG_20190201_152609 1.jpg
 catalog: true
 tags:
-    - Spring Boot
+    - Mybatis
 ---
 # 前言
 

@@ -7,7 +7,7 @@ author:     Reed
 header-img: images/2018-11/cold.jpg
 catalog: true
 tags:
-    - Spring cloud
+    - Spring Cloud
 ---
 
 # 前言
