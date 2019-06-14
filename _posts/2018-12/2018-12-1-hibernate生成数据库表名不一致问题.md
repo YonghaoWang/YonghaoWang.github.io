@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      hibernate生成数据库表名不一致问题
-subtitle:   修改hibernate命名策略
+title:      Hibernate生成数据库表名不一致问题
+subtitle:   修改Hibernate命名策略
 date:       2018-12-01
 author:     Reed
 header-img: images/2018-12/photo_2018-12-11_12-43-04.jpg
@@ -12,7 +12,7 @@ tags:
 
 # 正文
 
-在Spring boot里使用hibernate自动建表的时候，我们会遇到字段名与数据库的实际名称有所不同的情况，这是因为hibernate有一个命名策略。
+在Spring Boot里使用Hibernate自动建表的时候，我们会遇到字段名与数据库的实际名称有所不同的情况，这是因为Hibernate有一个命名策略。
 
 在application.yml文件里可以手动指定一下
 

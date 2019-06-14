@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      spring cloud zuul传递敏感头信息
+title:      Spring Cloud Zuul传递敏感头信息
 subtitle:   提供给下游服务请求头信息
 date:       2018-11-18
 author:     Reed
@@ -11,11 +11,11 @@ tags:
 ---
 
 # 前言
-今天我在微服务gateway后的服务需要用到token里的一些用户信息，发现zuul转发后的`HttpServletRequest`为空，不能拿到数据。
+今天我在微服务Gateway后的服务需要用到Token里的一些用户信息，发现Zuul转发后的`HttpServletRequest`为空，不能拿到数据。
 # 解决
-按照通常的办法，先去Google找了一下，原来是zuul在转发请求的时候，默认把请求里的header给清空了，于是后边的服务便拿不到相关的信息。
+按照通常的办法，先去Google找了一下，原来是Zuul在转发请求的时候，默认把请求里的Header给清空了，于是后边的服务便拿不到相关的信息。
 
-我们可以在gateway的yml文件里配置一下，添加`sensitive-headers`，让它把header转发即可。
+我们可以在Gateway的yml文件里配置一下，添加`sensitive-headers`，让它把Header转发即可。
 ```
 zuul:
   routes:

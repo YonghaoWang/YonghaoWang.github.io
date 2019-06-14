@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot集成Shiro + redis
+title:      Spring Boot集成Shiro + Redis
 subtitle:   介绍一下通过基于角色的权限验证的Shiro配置
 date:       2019-03-01
 author:     Reed
@@ -11,11 +11,11 @@ tags:
 ---
 # 前言
 
-在Spring中主流的安全框架有Spring Security和Apache Shiro，两者各有特点，这里介绍一下Apache Shiro的简单配置（使用redis存储缓存）。
+在Spring中主流的安全框架有Spring Security和Apache Shiro，两者各有特点，这里介绍一下Apache Shiro的简单配置（使用Redis存储缓存）。
 
 # 正文
 #### 配置依赖
-在`build.gradle`中引入所需依赖(当然提前安装好redis是必需的)
+在`build.gradle`中引入所需依赖(当然提前安装好Redis是必需的)
 ``` gradle
     // https://mvnrepository.com/artifact/org.crazycake/shiro-redis
     compile group: 'org.crazycake', name: 'shiro-redis', version: '3.2.2'
@@ -155,7 +155,7 @@ public class ShiroConfigure {
         return advisorAutoProxyCreator;
     }
 ```
-需要注意的是，其中的`filterChainDefinitionMap.put("/user/**", "roles[user]");`，这是基于url的拦截，需要放在`authc`配置的上边，否则不起作用。
+需要注意的是，其中的`filterChainDefinitionMap.put("/user/**", "roles[user]");`，这是基于URL的拦截，需要放在`authc`配置的上边，否则不起作用。
 
 如果需要使用更灵活的`@ReqiureRoles`的话，这里可以不配置roles，然后在需要的类或者方法上配置即可。
 

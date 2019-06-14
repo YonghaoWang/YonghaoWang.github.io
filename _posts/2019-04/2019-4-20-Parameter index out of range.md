@@ -9,7 +9,7 @@ tags:
     - Mybatis
 ---
 # 正文
-这天用mybatis的手写sql语句查询的时候，涉及到了多表查询，查询语句不应该有问题的（毕竟也是很熟悉基本的sql了），可是运行的时候确有这个错误：
+这天用MyBatis的手写SQL语句查询的时候，涉及到了多表查询，查询语句不应该有问题的（毕竟也是很熟悉基本的SQL了），可是运行的时候确有这个错误：
 ``` java
 ERROR 138920 --- [nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='publishCode', mode=IN, javaType=class java.lang.Object, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #2 with JdbcType null . Try setting a different JdbcType for this parameter or a different configuration property. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #2 with JdbcType null . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.sql.SQLException: Parameter index out of range (2 > number of parameters, which is 1).] with root cause
 
@@ -28,9 +28,9 @@ group by userCode
 ```
 参数数量错误？但是我在这个地方只用了一个参数，却告诉我需要两个参数...
 
-在搜索引擎查询了一番，大家都说是like语句取参数的问题，很明显和我的这个是不同情况，直到在一篇博文的留言里发现了问题！
+在搜索引擎查询了一番，大家都说是Like语句取参数的问题，很明显和我的这个是不同情况，直到在一篇博文的留言里发现了问题！
 
-其实我原来的sql语句是这样的：
+其实我原来的SQL语句是这样的：
 ``` sql
     select userCode
     from record

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      spring boot协作开发时数据库配置解决办法
+title:      Spring Boot协作开发时数据库配置解决办法
 # subtitle:   
 date:       2018-11-17
 author:     Reed
@@ -11,10 +11,10 @@ tags:
 ---
 
 # 前言
-spring boot项目在大家共同开发的时候，如果每个人的数据库配置都不一样的话，提交代码更改时得万分小心才行，否则等着被锤吧O(∩_∩)O。
+Spring Boot项目在大家共同开发的时候，如果每个人的数据库配置都不一样的话，提交代码更改时得万分小心才行，否则等着被锤吧O(∩_∩)O。
 
 # 操作
-其实spring boot查找配置文件的时候呢，有一个顺序，在前面的优先级更高。
+其实Spring Boot查找配置文件的时候呢，有一个顺序，在前面的优先级更高。
 ```
 file:./config/
 file:./
@@ -31,4 +31,4 @@ spring:
         password: root
         username: 123456
 ```
-然后在`.gitignore`里面加入这个文件的相对路径，git在提交的时候将会忽略掉它。
+然后在`.gitignore`里面加入这个文件的相对路径，Git在提交的时候将会忽略掉它。

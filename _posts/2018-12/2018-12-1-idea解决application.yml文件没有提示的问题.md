@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      解决idea在application.yml文件没有提示的问题
+title:      解决IDEA在application.yml文件没有提示的问题
 # subtitle:   修改hibernate命名策略
 date:       2018-12-01
 author:     Reed
@@ -11,9 +11,9 @@ tags:
 ---
 
 # 前言
-在spring boot里，默认的配置文件是`application.properties`，而yml格式文件能更好的展现出配置结构以及简洁的表达。
+在Spring Boot里，默认的配置文件是`application.properties`，而yml格式文件能更好的展现出配置结构以及简洁的表达。
 
-令人奇怪的是，将`application.properties`文件更改为`application.yml`后，有时候会出现idea无法识别为配置文件的情况。同时文件的图标都变了。
+令人奇怪的是，将`application.properties`文件更改为`application.yml`后，有时候会出现IDEA无法识别为配置文件的情况。同时文件的图标都变了。
 
 ![](/images/2018-12/2019.png)
 
@@ -28,6 +28,6 @@ File-->Settings...-->Plugins-->
 
 然后点击`Browse repositories...`
 
-搜索`spring Assistant`插件，点击安装它，然后重启一下idea，我们熟悉的配置提示又出来了。
+搜索`spring Assistant`插件，点击安装它，然后重启一下IDEA，我们熟悉的配置提示又出来了。
 
 ![](/images/2018-12/01152628.png)

@@ -1,7 +1,6 @@
 ---
 layout:     post
-title:      idea启动spring boot出现yml文件错误
-subtitle:   修改hibernate命名策略
+title:      IDEA启动Spring Boot出现yml文件错误
 date:       2018-12-13
 author:     Reed
 header-img: images/2018-12/photo_2018-12-11_12-43-07.jpg
@@ -12,11 +11,11 @@ tags:
 
 # 解决
 
-出现这个问题呢，是因为spring boot默认的`application.propertities`文件编码是GBK，我们在idea的右下角可以看到。
+出现这个问题呢，是因为Spring Boot默认的`application.propertities`文件编码是GBK，我们在IDEA的右下角可以看到。
 
 ![](/images/2018-12/216113853.png)
 
-所以我们需要将它修改为`UTF-8`即可，点击idea右下角的`GBK`，提供了多种选择，这里我们点击`UTF-8`。
+所以我们需要将它修改为`UTF-8`即可，点击IDEA右下角的`GBK`，提供了多种选择，这里我们点击`UTF-8`。
 
 如果文件里包含中文，会出现这样一个提示。
 

@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      spring boot中引用自定义字段
-subtitle:    在使用spring boot进行开发的时候会使用到自定义的一些字段
+title:      Spring Boot中引用自定义字段
+subtitle:    在使用Spring Boot进行开发的时候会使用到自定义的一些字段
 date:       2018-11-14
 author:     Reed
 header-img: images/2018-11/DSC_0972.JPG
@@ -11,7 +11,7 @@ tags:
 ---
 # 前言
 
- 在spring boot开发的时候会使用到自定义的一些字段，这个时候我们就可以使用spring boot提供的` @Value `注解来达到这一目的。
+ 在Spring Boot开发的时候会使用到自定义的一些字段，这个时候我们就可以使用Spring Boot提供的` @Value `注解来达到这一目的。
 
 # 正文
 首先在` application.yml `文件里设置好我们需要用到的字段
