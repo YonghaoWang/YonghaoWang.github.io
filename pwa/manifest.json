@@ -1,6 +1,6 @@
 {
-  "name": "BY Blog",
-  "short_name": "BY Blog",
+  "name": "Reed's Blog",
+  "short_name": "Reed's Blog",
   "description": "A personal blog by programmer",
   "icons": [{
     "src": "icons/pwa_icon_128.png",
