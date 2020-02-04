@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      记录一次Redis被getshell
-date:       2019-11-12
+title:      Spring Boot 404之后会丢失JSessionID
+date:       2019-12-18
 author:     Reed
 # header-img: images/2019-6/photo_2019-06-13_22-09-46.jpg
 catalog: true
@@ -9,6 +9,8 @@ tags:
     - Redis
 ---
 # 前言
+
+interceptor 404 会重置 session
 最近新买了个服务器（ubuntu18系统），打算作为一个项目的生产环境，刚刚装好各种环境、软件，当然作为缓存使用的Redis也在其中。
 
 # 无法登录
