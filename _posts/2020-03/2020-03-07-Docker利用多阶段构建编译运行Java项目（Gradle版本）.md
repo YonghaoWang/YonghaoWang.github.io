@@ -48,8 +48,9 @@ rootProject.name = 'statistics'
 这样制作的镜像里并不包含构建环境，我们只使用了其构建产物。
 ``` Docker
 FROM gradle:5.3-jdk-alpine as builder
-WORKDIR /home/gradle/src
+# 复制文件时将所有权更改为gradle用户，然后再设置WOKRKDIR，否则会出现权限问题。
 COPY --chown=gradle:gradle . /home/gradle/src
+WORKDIR /home/gradle/src
 RUN gradle build -x test bootJar
 
 FROM openjdk:8-jdk-alpine as prod
