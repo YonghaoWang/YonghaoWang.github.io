@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      如何将markdown语法文章转换到confluence并生成目录
+title:      将markdown语法文章转换到confluence并生成目录
 date:       2020-04-17
 author:     Reed
 # header-img: images/2019-6/photo_2019-06-13_22-09-46.jpg
