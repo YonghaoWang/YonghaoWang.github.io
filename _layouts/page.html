@@ -99,36 +99,6 @@ layout: default
                 {% endif %}
 
                 <!-- light search -->
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="#">light search</a></h5>
-                    <div hidden="hidden">
-                        <!--Google-->
-                        <form action="https://www.google.com.hk/search">
-                            <input type="text" name=q id="GContent" size=30>
-                            <input type="submit" id="ToG">
-                        </form>
-                        <!--Baidu-->
-                        <form action="http://baidu.com/s">
-                            <input type="text" name=wd id="BaiduContent" size=30>
-                            <input type="submit" id="ToBaidu">
-                        </form>
-                        <!--Bing-->
-                        <form action="http://cn.bing.com/search">
-                            <input type="text" name=q id="BingContent" size=30>
-                            <input type="submit" id="ToBing">
-                        </form>
-                    </div>
-                    <div class="visible-md visible-lg">
-                        <form>
-                            <input placeholder="">
-                            <!--不同的搜索引擎按钮-->
-                            <button class="btn btn-xs btn-warning s-btn submit">GG</button>
-                            <button class="btn btn-xs btn-success s-btn submit">Bing</button>
-                            <button class="btn btn-xs btn-danger s-btn submit">Baidu</button>
-                        </form>
-                    </div>
-                </section>
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>

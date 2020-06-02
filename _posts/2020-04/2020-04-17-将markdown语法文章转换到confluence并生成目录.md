@@ -58,6 +58,7 @@ markdown2confluence markdown转换.md
 点击插入按钮将内容添加到正文，效果还是很不错的哈。
 
 - 注： 由于markdown图片类似于html外部引入，图片则需要在confluence文中对应的位置手动上传一下。
+
 ## 生成目录
 熟悉markdown语法的作者都知道，编写文章的时候会指定标题的层次，同时也就形成了目录，无需额外操作。
 
